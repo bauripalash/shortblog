@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>$WEBSITE_NAME</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.png" />
+    <meta property="og:site_name" content="$WEBSITE_NAME" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="$WEBSITE_NAME" />
+    <meta
+      property="og:description"
+      content="$WEBSITE_DESCRIPTION
+"
+    />
+    <meta property="og:url" content="$SITE_URL" />
+    <meta
+      property="og:image"
+      content="$SITE_URL/$SITE_COVER"
+    />
+    <meta
+      property="article:publisher"
+      content="https://www.facebook.com/$AUTHOR_FACEBOOK"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="$WEBSITE_NAME" />
+    <meta
+      name="twitter:description"
+      content="$WEBSITE_DESCRIPTION
+"
+    />
+    <meta name="twitter:url" content="$SITE_URL" />
+    <meta
+      name="twitter:image"
+      content="$SITE_URL/$SITE_COVER"
+    />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="$AUTHOR" />
+    <meta name="twitter:site" content="$AUTHOR_TWITTER" />
+    <meta name="twitter:creator" content="$AUTHOR_TWITTER" />
+    <meta property="og:image:width" content="2000" />
+    <meta property="og:image:height" content="666" />
+
+    <script type="application/ld+json">
+      {
+          "@context": "https://schema.org",
+          "@type": "Website",
+          "publisher": {
+              "@type": "Organization",
+              "name": "$WEBSITE_NAME",
+              "logo": "$SITE_URL"
+          },
+          "url": "$SITE_URL",
+          "image": {
+              "@type": "ImageObject",
+              "url": "$SITE_URL/$SITE_COVER",
+              "width": 2000,
+              "height": 666
+          },
+          "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "$SITE_URL"
+          },
+          "description": "$WEBSITE_DESCRIPTION
+      "
+      }
+    </script>
+    <link rel="stylesheet" href="$SITE_URL/static/index.css" />
+  </head>
+  <body>
+    <div class="main">
+      <header>
+        <p class="hitem">
+          <b><a href="$SITE_URL">$WEBSITE_NAME</a></b>
+        </p>
+        $ABOUT_BLOCK
+      </header>
+      <div class="postlist" id="postlist">
+        <div id="post_ul">
+          <!-- Post List Goes Here -->
+        </div>
+      </div>
+      <div class="articlebody_holder" id="articlebody_holder">
+        <h3 id="articleheader" style="display: none;text-align: center;"></h3>
+        <div id="articleimg_holder">
+          <img style="display: none;" id="articleimg" class="responsive" />
+        </div>
+        <div class="articlebody" id="articlebody"></div>
+
+        <div id="spareuse"></div>
+        <!-- Article Goes Here -->
+
+      </div>
+      <div
+        style="display: none;"
+        id="paginator_holder"
+        class="paginator_holder"
+      >
+        <div class="paginator" id="paginator"></div>
+      </div>
+      <hr />
+      <footer>
+        <div>
+          <p>
+            <small>2020 (C) $AUTHOR , All Rights Reserved.</small>
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="$SITE_URL/static/res.js"></script>
+    <script src="$SITE_URL/static/index.js"></script>
+  </body>
+</html>
